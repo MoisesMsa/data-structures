@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/moita/projetos/ufrn/ed/oldList/inc/list.h
+
+/home/moita/projetos/ufrn/ed/oldList/src/driver_list.cpp
+iostream
+-
+cassert
+-
+iterator
+-
+../inc/list.h
+/home/moita/projetos/ufrn/ed/oldList/inc/list.h
+

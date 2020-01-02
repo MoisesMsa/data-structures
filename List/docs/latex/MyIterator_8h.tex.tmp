@@ -1,0 +1,28 @@
+\hypertarget{MyIterator_8h}{}\section{inc/\+My\+Iterator.h File Reference}
+\label{MyIterator_8h}\index{inc/\+My\+Iterator.\+h@{inc/\+My\+Iterator.\+h}}
+
+
+Class to encapsule a pointer (private $\ast$current)  
+
+
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structchoose}{choose$<$ flag, Is\+True, Is\+False $>$}
+\begin{DoxyCompactList}\small\item\em struct to instace a iterator as const\+\_\+iterator or iterator \end{DoxyCompactList}\item 
+struct \hyperlink{structchoose_3_01true_00_01IsTrue_00_01IsFalse_01_4}{choose$<$ true, Is\+True, Is\+False $>$}
+\item 
+struct \hyperlink{structchoose_3_01false_00_01IsTrue_00_01IsFalse_01_4}{choose$<$ false, Is\+True, Is\+False $>$}
+\item 
+class \hyperlink{classMyIterator}{My\+Iterator$<$ T, isconst $>$}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to encapsule a pointer (private $\ast$current) 
+
+\begin{DoxyAuthor}{Author}
+Moisés Sousa Araújo 
+\end{DoxyAuthor}

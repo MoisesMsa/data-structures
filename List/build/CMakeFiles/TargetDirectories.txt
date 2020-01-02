@@ -1,0 +1,3 @@
+/home/moita/projetos/ufrn/ed/oldList/build/CMakeFiles/rebuild_cache.dir
+/home/moita/projetos/ufrn/ed/oldList/build/CMakeFiles/list.dir
+/home/moita/projetos/ufrn/ed/oldList/build/CMakeFiles/edit_cache.dir

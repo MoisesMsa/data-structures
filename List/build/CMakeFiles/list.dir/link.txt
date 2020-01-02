@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -g    CMakeFiles/list.dir/src/driver_list.cpp.o  -o list 

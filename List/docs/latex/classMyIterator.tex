@@ -1,0 +1,296 @@
+\hypertarget{classMyIterator}{}\section{My\+Iterator$<$ T, isconst $>$ Class Template Reference}
+\label{classMyIterator}\index{My\+Iterator$<$ T, isconst $>$@{My\+Iterator$<$ T, isconst $>$}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMyIterator_ad6844a285132dae3746eab56209a19df}\label{classMyIterator_ad6844a285132dae3746eab56209a19df}} 
+typedef std\+::ptrdiff\+\_\+t \hyperlink{classMyIterator_ad6844a285132dae3746eab56209a19df}{difference\+\_\+type}
+\begin{DoxyCompactList}\small\item\em Difference type used to calculated distance between iterators. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMyIterator_a6ea9b266b66cd308b900699e00f863db}\label{classMyIterator_a6ea9b266b66cd308b900699e00f863db}} 
+typedef T \hyperlink{classMyIterator_a6ea9b266b66cd308b900699e00f863db}{value\+\_\+type}
+\begin{DoxyCompactList}\small\item\em Value type the iterator points to. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMyIterator_a8c0763dcd90e1c27433646a7b8f7131c}\label{classMyIterator_a8c0763dcd90e1c27433646a7b8f7131c}} 
+typedef \hyperlink{structchoose}{choose}$<$ isconst, const T \&, T \& $>$\+::type {\bfseries reference}
+\item 
+\mbox{\Hypertarget{classMyIterator_a0d485c5bfcae69cea8bf5e264568669c}\label{classMyIterator_a0d485c5bfcae69cea8bf5e264568669c}} 
+typedef \hyperlink{structchoose}{choose}$<$ isconst, const T $\ast$, T $\ast$ $>$\+::type {\bfseries pointer}
+\item 
+\mbox{\Hypertarget{classMyIterator_a340086eda5faa8e190199c02c49d0ce7}\label{classMyIterator_a340086eda5faa8e190199c02c49d0ce7}} 
+typedef std\+::bidirectional\+\_\+iterator\+\_\+tag {\bfseries iterator\+\_\+category}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMyIterator_a7c73c294e14c9f104970350ce48707fd}{My\+Iterator} (T $\ast$ptr=nullptr)
+\begin{DoxyCompactList}\small\item\em \{Constructs the object.\} \end{DoxyCompactList}\item 
+\hyperlink{classMyIterator_a56b5edf3d70253f7b2f2fd5fc15bca18}{My\+Iterator} (const \hyperlink{classMyIterator}{My\+Iterator} \&)=default
+\begin{DoxyCompactList}\small\item\em \{Constructs the object.\} \end{DoxyCompactList}\item 
+\hyperlink{classMyIterator}{My\+Iterator} \& \hyperlink{classMyIterator_ab388cff932fc5f108bc530acdb18fa4f}{operator=} (const \hyperlink{classMyIterator}{My\+Iterator} \&itr)=default
+\begin{DoxyCompactList}\small\item\em Constructs the object. \end{DoxyCompactList}\item 
+\hyperlink{classMyIterator}{My\+Iterator} \& \hyperlink{classMyIterator_ad0d1d4cf8fb2db01a03393a0c704929d}{operator=} (const reference itr)
+\begin{DoxyCompactList}\small\item\em \{Constructs the object.\} \end{DoxyCompactList}\item 
+reference \hyperlink{classMyIterator_aef723487fdda934f8b6ca6fbd2136e11}{operator$\ast$} () const
+\begin{DoxyCompactList}\small\item\em \{pointer desreference\} \end{DoxyCompactList}\item 
+pointer \hyperlink{classMyIterator_a2ff4f43ca484f81a899f6b33afe69139}{operator-\/$>$} (void) const
+\begin{DoxyCompactList}\small\item\em \{pointer desreference\} \end{DoxyCompactList}\item 
+\hyperlink{classMyIterator}{My\+Iterator} \& \hyperlink{classMyIterator_a07598b2a8227dba516a2d40289294a23}{operator++} (void)
+\begin{DoxyCompactList}\small\item\em \{increment operator\} \end{DoxyCompactList}\item 
+\hyperlink{classMyIterator}{My\+Iterator} \& \hyperlink{classMyIterator_ae4acfd6eb2cf90596b33b1874dd3cf5f}{operator-\/-\/} (void)
+\begin{DoxyCompactList}\small\item\em \{decrease operator\} \end{DoxyCompactList}\item 
+\hyperlink{classMyIterator}{My\+Iterator} \hyperlink{classMyIterator_a84b1fec0b90ea0ad1727a52e33f64918}{operator++} (int)
+\begin{DoxyCompactList}\small\item\em \{int incrment operator\} \end{DoxyCompactList}\item 
+\hyperlink{classMyIterator}{My\+Iterator} \hyperlink{classMyIterator_ac976eedaee9a65a69133d7bd3306efab}{operator-\/-\/} (int)
+\begin{DoxyCompactList}\small\item\em \{decrease int operator\} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMyIterator_ae4441cd04af8111ccb2b9844c0031915}\label{classMyIterator_ae4441cd04af8111ccb2b9844c0031915}} 
+bool {\bfseries operator==} (const \hyperlink{classMyIterator}{My\+Iterator} \&itr) const
+\item 
+\mbox{\Hypertarget{classMyIterator_a5328706bb5c5e42f766683079470f77d}\label{classMyIterator_a5328706bb5c5e42f766683079470f77d}} 
+bool {\bfseries operator!=} (const \hyperlink{classMyIterator}{My\+Iterator} \&itr) const
+\item 
+\hyperlink{classMyIterator_ad6844a285132dae3746eab56209a19df}{difference\+\_\+type} \hyperlink{classMyIterator_ae0a5d53a39a4659af9a3fcc53bc4b9fa}{operator-\/} (\hyperlink{classMyIterator}{My\+Iterator} \&itr)
+\begin{DoxyCompactList}\small\item\em \{ return distance betwen current and other iterator to lvalues \} \end{DoxyCompactList}\item 
+\hyperlink{classMyIterator_ad6844a285132dae3746eab56209a19df}{difference\+\_\+type} \hyperlink{classMyIterator_acd9e090badecfce5e154b55a581b9bae}{operator-\/} (\hyperlink{classMyIterator}{My\+Iterator} \&\&itr)
+\begin{DoxyCompactList}\small\item\em \{ return distance betwen current and other iterator to rvalues \} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMyIterator}{My\+Iterator} \hyperlink{classMyIterator_a00e9adb1f8c6f6c331689846c83ef9c0}{operator+} (\hyperlink{classMyIterator}{My\+Iterator} itr, \hyperlink{classMyIterator_ad6844a285132dae3746eab56209a19df}{difference\+\_\+type} n)
+\begin{DoxyCompactList}\small\item\em \{add n positions to the current pointer\} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMyIterator_aec9f85d17a37da42b8850a3628ddf7f0}\label{classMyIterator_aec9f85d17a37da42b8850a3628ddf7f0}} 
+\hyperlink{classMyIterator}{My\+Iterator} {\bfseries operator+} (\hyperlink{classMyIterator_ad6844a285132dae3746eab56209a19df}{difference\+\_\+type} n, \hyperlink{classMyIterator}{My\+Iterator} itr)
+\item 
+\hyperlink{classMyIterator}{My\+Iterator} \hyperlink{classMyIterator_a5814a5d203e8f75aea64183bcb025db4}{operator-\/} (\hyperlink{classMyIterator_ad6844a285132dae3746eab56209a19df}{difference\+\_\+type} n, \hyperlink{classMyIterator}{My\+Iterator} itr)
+\begin{DoxyCompactList}\small\item\em \{decrement n positions to the current pointer in inverse order\} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMyIterator_ab158f45402b9b5ea691473afeabf4ff4}\label{classMyIterator_ab158f45402b9b5ea691473afeabf4ff4}} 
+\hyperlink{classMyIterator}{My\+Iterator} {\bfseries operator-\/} (\hyperlink{classMyIterator}{My\+Iterator} itr, \hyperlink{classMyIterator_ad6844a285132dae3746eab56209a19df}{difference\+\_\+type} n)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMyIterator_a7c73c294e14c9f104970350ce48707fd}\label{classMyIterator_a7c73c294e14c9f104970350ce48707fd}} 
+\index{My\+Iterator@{My\+Iterator}!My\+Iterator@{My\+Iterator}}
+\index{My\+Iterator@{My\+Iterator}!My\+Iterator@{My\+Iterator}}
+\subsubsection{\texorpdfstring{My\+Iterator()}{MyIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T, bool isconst = false$>$ \\
+\hyperlink{classMyIterator}{My\+Iterator}$<$ T, isconst $>$\+::\hyperlink{classMyIterator}{My\+Iterator} (\begin{DoxyParamCaption}\item[{T $\ast$}]{ptr = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\{Constructs the object.\} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMyIterator_a56b5edf3d70253f7b2f2fd5fc15bca18}\label{classMyIterator_a56b5edf3d70253f7b2f2fd5fc15bca18}} 
+\index{My\+Iterator@{My\+Iterator}!My\+Iterator@{My\+Iterator}}
+\index{My\+Iterator@{My\+Iterator}!My\+Iterator@{My\+Iterator}}
+\subsubsection{\texorpdfstring{My\+Iterator()}{MyIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T, bool isconst = false$>$ \\
+\hyperlink{classMyIterator}{My\+Iterator}$<$ T, isconst $>$\+::\hyperlink{classMyIterator}{My\+Iterator} (\begin{DoxyParamCaption}\item[{const \hyperlink{classMyIterator}{My\+Iterator}$<$ T, isconst $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\{Constructs the object.\} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMyIterator_aef723487fdda934f8b6ca6fbd2136e11}\label{classMyIterator_aef723487fdda934f8b6ca6fbd2136e11}} 
+\index{My\+Iterator@{My\+Iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!My\+Iterator@{My\+Iterator}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily template$<$typename T, bool isconst = false$>$ \\
+reference \hyperlink{classMyIterator}{My\+Iterator}$<$ T, isconst $>$\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\{pointer desreference\} 
+
+\begin{DoxyReturn}{Returns}
+\{returns the content value\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMyIterator_a07598b2a8227dba516a2d40289294a23}\label{classMyIterator_a07598b2a8227dba516a2d40289294a23}} 
+\index{My\+Iterator@{My\+Iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!My\+Iterator@{My\+Iterator}}
+\subsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T, bool isconst = false$>$ \\
+\hyperlink{classMyIterator}{My\+Iterator}\& \hyperlink{classMyIterator}{My\+Iterator}$<$ T, isconst $>$\+::operator++ (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\{increment operator\} 
+
+\begin{DoxyReturn}{Returns}
+\{class private pointer ++current\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMyIterator_a84b1fec0b90ea0ad1727a52e33f64918}\label{classMyIterator_a84b1fec0b90ea0ad1727a52e33f64918}} 
+\index{My\+Iterator@{My\+Iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!My\+Iterator@{My\+Iterator}}
+\subsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T, bool isconst = false$>$ \\
+\hyperlink{classMyIterator}{My\+Iterator} \hyperlink{classMyIterator}{My\+Iterator}$<$ T, isconst $>$\+::operator++ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\{int incrment operator\} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMyIterator_ae0a5d53a39a4659af9a3fcc53bc4b9fa}\label{classMyIterator_ae0a5d53a39a4659af9a3fcc53bc4b9fa}} 
+\index{My\+Iterator@{My\+Iterator}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!My\+Iterator@{My\+Iterator}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T, bool isconst = false$>$ \\
+\hyperlink{classMyIterator_ad6844a285132dae3746eab56209a19df}{difference\+\_\+type} \hyperlink{classMyIterator}{My\+Iterator}$<$ T, isconst $>$\+::operator-\/ (\begin{DoxyParamCaption}\item[{\hyperlink{classMyIterator}{My\+Iterator}$<$ T, isconst $>$ \&}]{itr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\{ return distance betwen current and other iterator to lvalues \} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMyIterator_acd9e090badecfce5e154b55a581b9bae}\label{classMyIterator_acd9e090badecfce5e154b55a581b9bae}} 
+\index{My\+Iterator@{My\+Iterator}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!My\+Iterator@{My\+Iterator}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T, bool isconst = false$>$ \\
+\hyperlink{classMyIterator_ad6844a285132dae3746eab56209a19df}{difference\+\_\+type} \hyperlink{classMyIterator}{My\+Iterator}$<$ T, isconst $>$\+::operator-\/ (\begin{DoxyParamCaption}\item[{\hyperlink{classMyIterator}{My\+Iterator}$<$ T, isconst $>$ \&\&}]{itr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\{ return distance betwen current and other iterator to rvalues \} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMyIterator_ae4acfd6eb2cf90596b33b1874dd3cf5f}\label{classMyIterator_ae4acfd6eb2cf90596b33b1874dd3cf5f}} 
+\index{My\+Iterator@{My\+Iterator}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!My\+Iterator@{My\+Iterator}}
+\subsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T, bool isconst = false$>$ \\
+\hyperlink{classMyIterator}{My\+Iterator}\& \hyperlink{classMyIterator}{My\+Iterator}$<$ T, isconst $>$\+::operator-\/-\/ (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\{decrease operator\} 
+
+\begin{DoxyReturn}{Returns}
+\{class private pointer --current\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMyIterator_ac976eedaee9a65a69133d7bd3306efab}\label{classMyIterator_ac976eedaee9a65a69133d7bd3306efab}} 
+\index{My\+Iterator@{My\+Iterator}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!My\+Iterator@{My\+Iterator}}
+\subsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T, bool isconst = false$>$ \\
+\hyperlink{classMyIterator}{My\+Iterator} \hyperlink{classMyIterator}{My\+Iterator}$<$ T, isconst $>$\+::operator-\/-\/ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\{decrease int operator\} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMyIterator_a2ff4f43ca484f81a899f6b33afe69139}\label{classMyIterator_a2ff4f43ca484f81a899f6b33afe69139}} 
+\index{My\+Iterator@{My\+Iterator}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!My\+Iterator@{My\+Iterator}}
+\subsubsection{\texorpdfstring{operator-\/$>$()}{operator->()}}
+{\footnotesize\ttfamily template$<$typename T, bool isconst = false$>$ \\
+pointer \hyperlink{classMyIterator}{My\+Iterator}$<$ T, isconst $>$\+::operator-\/$>$ (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\{pointer desreference\} 
+
+\begin{DoxyReturn}{Returns}
+\{returns the content value\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMyIterator_ab388cff932fc5f108bc530acdb18fa4f}\label{classMyIterator_ab388cff932fc5f108bc530acdb18fa4f}} 
+\index{My\+Iterator@{My\+Iterator}!operator=@{operator=}}
+\index{operator=@{operator=}!My\+Iterator@{My\+Iterator}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T, bool isconst = false$>$ \\
+\hyperlink{classMyIterator}{My\+Iterator}\& \hyperlink{classMyIterator}{My\+Iterator}$<$ T, isconst $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classMyIterator}{My\+Iterator}$<$ T, isconst $>$ \&}]{itr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Constructs the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMyIterator_ad0d1d4cf8fb2db01a03393a0c704929d}\label{classMyIterator_ad0d1d4cf8fb2db01a03393a0c704929d}} 
+\index{My\+Iterator@{My\+Iterator}!operator=@{operator=}}
+\index{operator=@{operator=}!My\+Iterator@{My\+Iterator}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T, bool isconst = false$>$ \\
+\hyperlink{classMyIterator}{My\+Iterator}\& \hyperlink{classMyIterator}{My\+Iterator}$<$ T, isconst $>$\+::operator= (\begin{DoxyParamCaption}\item[{const reference}]{itr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\{Constructs the object.\} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classMyIterator_a00e9adb1f8c6f6c331689846c83ef9c0}\label{classMyIterator_a00e9adb1f8c6f6c331689846c83ef9c0}} 
+\index{My\+Iterator@{My\+Iterator}!operator+@{operator+}}
+\index{operator+@{operator+}!My\+Iterator@{My\+Iterator}}
+\subsubsection{\texorpdfstring{operator+}{operator+}}
+{\footnotesize\ttfamily template$<$typename T, bool isconst = false$>$ \\
+\hyperlink{classMyIterator}{My\+Iterator} operator+ (\begin{DoxyParamCaption}\item[{\hyperlink{classMyIterator}{My\+Iterator}$<$ T, isconst $>$}]{itr,  }\item[{\hyperlink{classMyIterator_ad6844a285132dae3746eab56209a19df}{difference\+\_\+type}}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\{add n positions to the current pointer\} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMyIterator_a5814a5d203e8f75aea64183bcb025db4}\label{classMyIterator_a5814a5d203e8f75aea64183bcb025db4}} 
+\index{My\+Iterator@{My\+Iterator}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!My\+Iterator@{My\+Iterator}}
+\subsubsection{\texorpdfstring{operator-\/}{operator-}}
+{\footnotesize\ttfamily template$<$typename T, bool isconst = false$>$ \\
+\hyperlink{classMyIterator}{My\+Iterator} operator-\/ (\begin{DoxyParamCaption}\item[{\hyperlink{classMyIterator_ad6844a285132dae3746eab56209a19df}{difference\+\_\+type}}]{n,  }\item[{\hyperlink{classMyIterator}{My\+Iterator}$<$ T, isconst $>$}]{itr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\{decrement n positions to the current pointer in inverse order\} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{MyIterator_8h}{My\+Iterator.\+h}\end{DoxyCompactItemize}
